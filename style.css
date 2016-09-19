@@ -34,7 +34,7 @@ h2 {
     background-color: #000;
     text-align: justify;
     color: #000;
-    letter-spacing: .45em;
+    letter-spacing: .3em;
     line-height: 1.2em;
 }
 ol {
@@ -129,6 +129,12 @@ i {
     }
 }
 
+@media (min-width: 500px) {
+    .m {
+        letter-spacing: .45em;
+    }
+}
+
 @media (min-width: 800px) {
     h1 {
         color: #fff;
@@ -139,8 +145,6 @@ i {
         border: none;
     }
 }
-
-
 @media (min-width: 800px) {
     .d {
         position: fixed;
