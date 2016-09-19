@@ -12,22 +12,18 @@ h1 {
     max-width: 7em;
     border-bottom: 1px solid #ccc;
 }
-@media (min-width: 800px) {
-    h1 {
-        color: #fff;
-        text-align: center;
-        letter-spacing: .1em;
-        word-spacing: .4em;
-        max-width: none;
-        border: none;
-    }
+a:not(.link) {
+    color: #000;
+    visibility: hidden;
 }
-a {
+.link {
     color: antiquewhite;
+    text-decoration: underline;
 }
-a:hover {
+.link:hover {
     cursor: pointer;
 }
+
 h2 {
     margin: 2em 0 1em 0;
 }
@@ -40,30 +36,6 @@ h2 {
     color: #000;
     letter-spacing: .45em;
     line-height: 1.2em;
-}
-@media (min-width: 800px) {
-    .d {
-        position: fixed;
-        border-left: 1px solid #444;
-        margin: 4em 2em 2em .5em;
-        top: 20px;
-        bottom: 0;
-        right: 0;
-        line-height: 1.4em;
-        width: 20%;
-        padding-left: 40px;
-    }
-    .b {
-        position: fixed;
-        border-right: 1px solid #444;
-        margin: 4em .5em 2em 2em;
-        top: 20px;
-        bottom: 0;
-        left: 0;
-        line-height: 1.4em;
-        width: 20%;
-        padding-right: 40px;
-    }
 }
 ol {
     padding-left: 1em;
@@ -154,5 +126,42 @@ i {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        color: #fff;
+        text-align: center;
+        letter-spacing: .1em;
+        word-spacing: .4em;
+        max-width: none;
+        border: none;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .d {
+        position: fixed;
+        border-left: 1px solid #444;
+        margin: 4em 2em 2em .5em;
+        top: 20px;
+        bottom: 0;
+        right: 0;
+        line-height: 1.4em;
+        width: 20%;
+        padding-left: 40px;
+    }
+    .b {
+        position: fixed;
+        border-right: 1px solid #444;
+        margin: 4em .5em 2em 2em;
+        top: 20px;
+        bottom: 0;
+        left: 0;
+        line-height: 1.4em;
+        width: 20%;
+        padding-right: 40px;
     }
 }
